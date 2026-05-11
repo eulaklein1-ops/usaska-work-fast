@@ -8,6 +8,6 @@
 // в вашу таблицу, потому что только вы можете создать web app в своём Google аккаунте.
 
 window.SITE_CONFIG = {
-  googleSheetsEndpoint: 'PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE',
+  googleSheetsEndpoint: 'https://script.google.com/macros/s/AKfycbwBrZLBtvzI2hbDnbPfz1lrs7JWz2ndcq7I26Q-C2nz2P2IJe3naktlayY9us-lxN65/exec',
   successMessage: 'Спасибо! Заявка отправлена. Менеджер скоро свяжется с вами.'
 };
