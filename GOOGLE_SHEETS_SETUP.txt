@@ -1,0 +1,41 @@
+НАСТРОЙКА GOOGLE TABLES ДЛЯ ЛИДОВ
+=================================
+
+1. Создайте новую Google Таблицу.
+2. Скопируйте ID таблицы из адресной строки.
+   Пример:
+   https://docs.google.com/spreadsheets/d/XXXXXXXXXXXXXX/edit
+   Здесь XXXXXXXXXXXXXX — это ID таблицы.
+
+3. В таблице нажмите:
+   Extensions -> Apps Script
+
+4. Удалите стандартный код и вставьте код из файла:
+   google-apps-script.js
+
+5. Вставьте ID вашей таблицы сюда:
+   const SPREADSHEET_ID = 'PASTE_YOUR_SPREADSHEET_ID_HERE';
+
+6. Нажмите Save.
+
+7. Затем:
+   Deploy -> New deployment -> Web app
+
+8. Параметры:
+   Execute as: Me
+   Who has access: Anyone
+
+9. Нажмите Deploy.
+
+10. Скопируйте Web App URL.
+
+11. Откройте файл сайта:
+    js/config.js
+
+12. Вставьте URL сюда:
+    googleSheetsEndpoint: 'PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE'
+
+13. Сохраните файл и заново загрузите сайт на хостинг / GitHub.
+
+ГОТОВО.
+Теперь все лиды будут падать в вашу Google Таблицу.

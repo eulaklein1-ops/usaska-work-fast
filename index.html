@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>USA Work — Работа в США с сопровождением</title>
+  <meta name="description" content="Работа в США: личный водитель, домработница, водитель на truck, строитель, установка солнечных панелей. Оставьте заявку — менеджер свяжется с вами.">
+  <meta name="theme-color" content="#071a37">
+  <meta property="og:title" content="USA Work — Работа в США">
+  <meta property="og:description" content="Короткая заявка: имя и телефон. Менеджер свяжется и подберёт вакансию.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero-driver-chat.webp">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/hero-driver-chat.webp" as="image">
+  <link rel="preload" href="assets/card-housekeeper-chat.jpg" as="image">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="site-loader" id="siteLoader"><span></span></div>
+
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="header" id="top">
+    <div class="container header-wrap">
+      <a href="#top" class="logo">
+        <span class="logo-icon">🇺🇸</span>
+        <span class="logo-text"><strong>USA Work</strong><small>вакансии и консультация</small></span>
+      </a>
+      <nav class="nav desktop-only">
+        <a href="#jobs">Вакансии</a>
+        <a href="#about">Преимущества</a>
+        <a href="#process">Как это работает</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#form" class="header-btn">Оставить заявку</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-slider" aria-hidden="true">
+        <div class="hero-slide active" style="background-image:url('assets/hero-driver-chat.webp')"></div>
+        <div class="hero-slide" style="background-image:url('assets/card-housekeeper-chat.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('assets/hero-driver-board.webp')"></div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="top-chip reveal">Премиальный лендинг под рекламу США</div>
+          <h1 class="reveal">Работа в США<br><span>с красивой подачей и быстрой заявкой</span></h1>
+          <p class="hero-text reveal">Подбираем вакансии под ваш опыт: <strong>личный водитель, домработница, водитель на truck, строитель, установка солнечных панелей</strong>. Сайт сделан в дорогом стиле, но при этом понятен и удобен для мобильного трафика.</p>
+
+          <div class="hero-points reveal">
+            <div>✔ Официальное оформление</div>
+            <div>✔ Помощь с документами</div>
+            <div>✔ Короткая лид-форма</div>
+            <div>✔ Подходит под рекламу</div>
+          </div>
+
+          <div class="hero-actions reveal">
+            <a class="btn btn-gold" href="#form">Получить консультацию</a>
+            <a class="btn btn-glass" href="#jobs">Посмотреть вакансии</a>
+          </div>
+
+          <div class="hero-mini reveal">
+            <div class="mini-card glass">
+              <b>5 направлений</b>
+              <span>в одной воронке</span>
+            </div>
+            <div class="mini-card glass">
+              <b>1 минута</b>
+              <span>на оставление заявки</span>
+            </div>
+            <div class="mini-card glass">
+              <b>Google Sheets</b>
+              <span>для сбора лидов</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="lead-panel reveal" id="form">
+          <div class="lead-topline"></div>
+          <div class="lead-head">
+            <div class="lead-icon">📝</div>
+            <div>
+              <h2>Оставьте заявку</h2>
+              <p>Введите имя и номер телефона. Менеджер свяжется и подберёт подходящую вакансию.</p>
+            </div>
+          </div>
+
+          <form id="leadForm" class="lead-form" method="post" autocomplete="on">
+            <div class="field">
+              <label for="name">Имя</label>
+              <input id="name" name="name" type="text" placeholder="Например: Иван" minlength="2" required autocomplete="name">
+            </div>
+
+            <div class="field">
+              <label for="phone">Номер телефона</label>
+              <input id="phone" name="phone" type="tel" placeholder="+375 / +370 / +7 / +1" minlength="7" inputmode="tel" required autocomplete="tel">
+            </div>
+
+            <div class="field field-grid">
+              <div>
+                <label for="job">Вакансия</label>
+                <select id="job" name="job" required>
+                  <option value="">Выберите вакансию</option>
+                  <option>Личный водитель в США</option>
+                  <option>Домработница / помощница по дому</option>
+                  <option>Водитель на Truck</option>
+                  <option>Строитель</option>
+                  <option>Установка солнечных панелей</option>
+                  <option>Нужна консультация</option>
+                </select>
+              </div>
+              <div>
+                <label for="country">Где вы сейчас?</label>
+                <input id="country" name="country" type="text" placeholder="Страна / город">
+              </div>
+            </div>
+
+            <div class="field field-grid">
+              <div>
+                <label for="experience">Опыт</label>
+                <select id="experience" name="experience">
+                  <option>Есть опыт</option>
+                  <option>Нет опыта</option>
+                  <option>Нужно уточнить</option>
+                </select>
+              </div>
+              <div>
+                <label for="messenger">Как удобнее связаться?</label>
+                <select id="messenger" name="messenger">
+                  <option>Телефонный звонок</option>
+                  <option>WhatsApp</option>
+                  <option>Telegram</option>
+                </select>
+              </div>
+            </div>
+
+            <input type="hidden" name="utm" id="utmField">
+            <input type="hidden" name="page" id="pageField">
+            <input type="hidden" name="source" id="sourceField">
+            <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off">
+
+            <label class="consent">
+              <input type="checkbox" required>
+              <span>Согласен/согласна на обработку данных для связи по заявке. Условия зависят от вакансии, опыта, документов и собеседования.</span>
+            </label>
+
+            <button class="btn btn-submit" type="submit">Оставить заявку</button>
+            <p class="small-note">После отправки данные уйдут в Google Таблицу.</p>
+            <div class="form-message" id="formMessage" role="status"></div>
+          </form>
+        </aside>
+      </div>
+
+      <div class="hero-badges container">
+        <div class="trust-badge reveal"><span>⭐</span> Премиальный внешний вид</div>
+        <div class="trust-badge reveal"><span>📱</span> Адаптация под мобильный трафик</div>
+        <div class="trust-badge reveal"><span>📊</span> Интеграция с Google Sheets</div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="container stats-grid">
+        <div class="stat-card reveal">
+          <b data-counter="5">0</b>
+          <span>вакансий в одной форме</span>
+        </div>
+        <div class="stat-card reveal">
+          <b data-counter="1">0</b>
+          <span>минута на заполнение</span>
+        </div>
+        <div class="stat-card reveal">
+          <b data-counter="100">0</b>
+          <span>% мобильная адаптация</span>
+        </div>
+        <div class="stat-card reveal">
+          <b data-counter="24">0</b>
+          <span>/7 прием заявок</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="jobs">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-label">Вакансии</span>
+          <h2>Предложения, которые можно вести на одну страницу</h2>
+          <p>Собрали всё в одном лендинге, чтобы вы могли запускать разные креативы на один сайт и собирать лиды в одну таблицу.</p>
+        </div>
+
+        <div class="jobs-grid">
+          <article class="job-card reveal tilt-card">
+            <img src="assets/card-driver-phone.webp" alt="Личный водитель в США">
+            <div class="job-content">
+              <span class="job-tag">🚘 Личный водитель</span>
+              <h3>Работа личным водителем</h3>
+              <p>Семейный водитель или работа у частного работодателя в США. Акцент на ответственное вождение и аккуратность.</p>
+              <a href="#form" data-job="Личный водитель в США">Оставить заявку</a>
+            </div>
+          </article>
+
+          <article class="job-card reveal tilt-card">
+            <img src="assets/card-housekeeper-clean.webp" alt="Домработница в США">
+            <div class="job-content">
+              <span class="job-tag">🏠 Домработница</span>
+              <h3>Помощница по дому</h3>
+              <p>Уход за домом, порядок, бытовая помощь. Выглядит натурально и дорого — подходит для женской аудитории.</p>
+              <a href="#form" data-job="Домработница / помощница по дому">Оставить заявку</a>
+            </div>
+          </article>
+
+          <article class="job-card reveal tilt-card">
+            <img src="assets/card-truck-premium.jpg" alt="Водитель на truck в США">
+            <div class="job-content">
+              <span class="job-tag">🚛 Truck driver</span>
+              <h3>Водитель на Truck</h3>
+              <p>Подбор вакансий для водителей. На карточке — более дорогой, сильный визуальный стиль для рекламы.</p>
+              <a href="#form" data-job="Водитель на Truck">Оставить заявку</a>
+            </div>
+          </article>
+
+          <article class="job-card icon-card reveal tilt-card">
+            <div class="icon-sphere">🏗️</div>
+            <div class="job-content">
+              <span class="job-tag">Строительство</span>
+              <h3>Строитель</h3>
+              <p>Сайт готов для строительного трафика: отдельная карточка, связка с общей формой и таблицей лидов.</p>
+              <a href="#form" data-job="Строитель">Оставить заявку</a>
+            </div>
+          </article>
+
+          <article class="job-card icon-card reveal tilt-card">
+            <div class="icon-sphere">☀️</div>
+            <div class="job-content">
+              <span class="job-tag">Солнечные панели</span>
+              <h3>Установка солнечных панелей</h3>
+              <p>Подходит под трафик на монтаж и смежные технические вакансии. Всё идёт в одну таблицу для удобства.</p>
+              <a href="#form" data-job="Установка солнечных панелей">Оставить заявку</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <span class="section-label">Преимущества</span>
+          <h2>Дорогой внешний вид, как у реального современного сайта</h2>
+          <p>Я сделал страницу так, чтобы она выглядела не как обычный «креатив с формой», а как полноценный брендовый лендинг: мягкие анимации, стеклянные блоки, дорогая палитра, плавные появления и живые изображения.</p>
+          <ul class="premium-list">
+            <li>Анимация появления блоков при скролле</li>
+            <li>Плавная смена hero-фонов</li>
+            <li>Подсветка курсора на десктопе</li>
+            <li>Небольшой 3D tilt на карточках</li>
+            <li>Счётчики и hover-эффекты</li>
+            <li>Лиды сразу уходят в Google Sheets</li>
+          </ul>
+        </div>
+
+        <div class="showcase-grid">
+          <div class="showcase-card large reveal">
+            <img src="assets/card-housekeeper-chat.jpg" alt="Домработница в США">
+            <div class="showcase-info glass">
+              <strong>Натуральный стиль</strong>
+              <span>Изображения выглядят реалистично и вызывают доверие</span>
+            </div>
+          </div>
+          <div class="showcase-card reveal">
+            <img src="assets/hero-driver-board.webp" alt="Семейный водитель в США">
+          </div>
+          <div class="showcase-card reveal">
+            <img src="assets/card-housekeeper-blue.webp" alt="Работа в семье в США">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="process">
+      <div class="container process-grid">
+        <div class="timeline reveal">
+          <span class="section-label">Как это работает</span>
+          <h2>Простой путь от рекламы до лида</h2>
+          <div class="timeline-item">
+            <div class="step-dot">1</div>
+            <div>
+              <strong>Человек видит креатив</strong>
+              <p>Вы запускаете трафик из Facebook, Instagram, TikTok или других источников на этот сайт.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="step-dot">2</div>
+            <div>
+              <strong>Оставляет заявку</strong>
+              <p>Заполняет имя, номер телефона и выбирает интересующую вакансию.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="step-dot">3</div>
+            <div>
+              <strong>Лид падает в Google Таблицу</strong>
+              <p>Все данные, вместе с UTM и страницей, попадают в таблицу для обработки менеджером.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-card reveal">
+          <div class="chat-head">Пример реального диалога</div>
+          <div class="bubble left">Здравствуйте! Хочу узнать про работу в США <small>14:23</small></div>
+          <div class="bubble right">Добрый день! Какая вакансия вас интересует? <small>14:24</small></div>
+          <div class="bubble left">Личный водитель. Есть опыт 5 лет <small>14:25</small></div>
+          <div class="bubble right">Отлично. Менеджер свяжется с вами и расскажет условия 👍 <small>14:26</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-heading reveal center">
+          <span class="section-label">FAQ</span>
+          <h2>Частые вопросы</h2>
+        </div>
+        <div class="faq-grid">
+          <details class="reveal" open>
+            <summary>Как лиды попадают в Google Таблицу?</summary>
+            <p>Форма отправляет данные в Google Apps Script Web App. В архиве есть готовый файл <b>google-apps-script.js</b> и инструкция по подключению.</p>
+          </details>
+          <details class="reveal">
+            <summary>Этот сайт можно залить на GitHub Pages?</summary>
+            <p>Да. Сайт полностью статический. Для лидов нужен только ваш Google Apps Script URL, который вы вставляете в <b>js/config.js</b>.</p>
+          </details>
+          <details class="reveal">
+            <summary>Можно ли менять картинки и тексты?</summary>
+            <p>Да. Все изображения лежат в папке <b>assets</b>, тексты — в <b>index.html</b>. Можно быстро заменить под другой оффер.</p>
+          </details>
+          <details class="reveal">
+            <summary>Сохраняются ли UTM-метки?</summary>
+            <p>Да. Страница автоматически записывает query-параметры в поле <b>utm</b> и отправляет их вместе с заявкой.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-box reveal">
+        <div>
+          <span class="section-label light">Готово к запуску</span>
+          <h2>Залейте сайт на хостинг или GitHub и собирайте лиды</h2>
+          <p>Нужно только подключить ваш Google Apps Script URL — и форма начнёт отправлять лиды в Google Таблицу.</p>
+        </div>
+        <a href="#form" class="btn btn-gold">Перейти к форме</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div>
+        <b>USA Work</b>
+        <p>Лендинг для сбора заявок по вакансиям в США. Сайт адаптирован под мобильный трафик и рекламные источники.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#jobs">Вакансии</a>
+        <a href="#form">Форма</a>
+        <a href="privacy.html">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#form" class="mobile-cta">Оставить заявку</a>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
